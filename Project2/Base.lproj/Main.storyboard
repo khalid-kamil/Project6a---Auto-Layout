@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zfP-ih-bbv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zfP-ih-bbv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,21 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-Ds-RC3">
-                                <rect key="frame" x="107" y="200" width="200" height="100"/>
+                                <rect key="frame" x="107" y="124" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8G9-Ds-RC3" secondAttribute="height" multiplier="2:1" id="hmw-jt-11h"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Km-dH-SkY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hok-YE-xKs">
-                                <rect key="frame" x="107" y="600" width="200" height="100"/>
+                                <rect key="frame" x="107" y="384" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hok-YE-xKs" secondAttribute="height" multiplier="2:1" id="gHI-y5-k0Z"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIh-2x-uOj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qae-YZ-6UQ">
-                                <rect key="frame" x="107" y="400" width="200" height="100"/>
+                                <rect key="frame" x="107" y="254" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qae-YZ-6UQ" secondAttribute="height" multiplier="2:1" id="Svh-qg-zob"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbf-g9-N2d"/>
@@ -41,12 +50,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hok-YE-xKs" secondAttribute="bottom" constant="20" id="148-mc-SDs"/>
                             <constraint firstItem="hok-YE-xKs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="436-v9-1bh"/>
                             <constraint firstItem="8G9-Ds-RC3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7oI-Et-Q2q"/>
                             <constraint firstItem="qae-YZ-6UQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Ki-7g-CTf"/>
-                            <constraint firstItem="8G9-Ds-RC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="Tke-es-ukw"/>
-                            <constraint firstItem="qae-YZ-6UQ" firstAttribute="top" secondItem="8G9-Ds-RC3" secondAttribute="bottom" constant="100" id="i2h-WE-qMW"/>
-                            <constraint firstItem="hok-YE-xKs" firstAttribute="top" secondItem="qae-YZ-6UQ" secondAttribute="bottom" constant="100" id="x6W-8l-Kwe"/>
+                            <constraint firstItem="qae-YZ-6UQ" firstAttribute="height" secondItem="8G9-Ds-RC3" secondAttribute="height" id="L3Z-zj-Ku8"/>
+                            <constraint firstItem="8G9-Ds-RC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="edc-Xx-z58"/>
+                            <constraint firstItem="qae-YZ-6UQ" firstAttribute="top" secondItem="8G9-Ds-RC3" secondAttribute="bottom" constant="30" id="m48-di-cav"/>
+                            <constraint firstItem="hok-YE-xKs" firstAttribute="height" secondItem="qae-YZ-6UQ" secondAttribute="height" id="pZb-4d-Hi1"/>
+                            <constraint firstItem="hok-YE-xKs" firstAttribute="top" secondItem="qae-YZ-6UQ" secondAttribute="bottom" constant="30" id="suk-97-qZc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OBx-5Q-zZH"/>
